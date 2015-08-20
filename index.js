@@ -17,7 +17,7 @@ app.post('/',function(req, res) {
   res.end(req.body.button);
   switch (req.body.button) {
     case 'other-button':
-      exec(process.env.OTHER_BUTTON);
+      exec('curl -X POST --data-urlencode \'payload={"channel": "#jeopardy", "username": "nicksergeant", "text": "trebek jeopardy me", "icon_url": "http://i.nick.sg/image/352O2l124123/ht4bS0Qo.jpeg"}\' ' + process.env.OTHER_BUTTON);
     break;
   }
 });
