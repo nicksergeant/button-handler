@@ -11,6 +11,7 @@ app.get('/',function(req, res) {
 
 app.post('/',function(req, res) {
   if (req.body.key !== process.env.KEY) return res.end('');
+  console.log(req.body.button + ' pressed.');
   res.end(req.body.button);
 });
 
