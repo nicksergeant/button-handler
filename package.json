@@ -1,15 +1,19 @@
 {
-  "name": "handler",
-  "version": "1.0.0",
-  "description": "",
+  "name": "button-handler",
+  "version": "0.0.1",
+  "description": "A little Node app that handles my button pushing.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.13.3",
-    "express": "^4.13.3"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicksergeant/button-handler.git"
+  },
+  "author": "Nick Sergeant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicksergeant/button-handler/issues"
+  },
+  "homepage": "https://github.com/nicksergeant/button-handler#readme"
 }
