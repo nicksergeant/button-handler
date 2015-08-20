@@ -5,6 +5,10 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.get('/',function(req, res) {
+  res.end('');
+});
+
 app.post('/',function(req, res) {
   if (req.body.key !== process.env.KEY) return res.end('');
   res.end(req.body.button);
